@@ -54,8 +54,8 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSHKEY }}
-          fingerprint: ${{ secrets.FINGERPRINT }}
-          # passphrase: ${{ secrets.PASSPHRASE }}
+          # fingerprint: ${{ secrets.FINGERPRINT }}
+          passphrase: ${{ secrets.PASSPHRASE }}
           envs: IMAGE_NAME,REGISTRY,{{ secrets.DIGITALOCEAN_ACCESS_TOKEN }},GITHUB_SHA
           script: |
             # Login to registry
